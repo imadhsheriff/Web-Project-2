@@ -1,0 +1,21 @@
+TRAVELHUB UPDATE: CASHIER-ONLY BOOKING + ROUTE MAP + PRINTABLE RECEIPT
+
+What changed:
+- Booking collects travel date, traveller count and optional notes.
+- Booking now creates a Pending cashier payment record; no online/card payment form is offered.
+- After booking, the user is redirected to booking_receipt.php.
+- The reservation receipt can be printed or saved as PDF and shows total due, cashier reference, customer and trip details.
+- The receipt clearly states that it is NOT proof of payment. The cashier/admin must mark payment as Paid in the admin payment manager.
+- Package detail and booking pages show the start point, intermediate sightseeing stops, end point, descriptions and a map.
+- Leaflet + OpenStreetMap tiles require an internet connection. A numbered itinerary list remains available if the map library cannot load.
+- Route plans are sample planning routes with approximate coordinates; exact pickup, route order and stops must be confirmed with the tour operator.
+
+Install:
+1. Extract the ZIP into WAMP www folder.
+2. Import database/travelhub.sql into MySQL database travelhub (or use the existing imported database).
+3. Start Apache and MySQL.
+4. Open http://localhost/TravelHub_Website/ and sign in as a tourist.
+5. Select a package, book it, print/save the receipt and take it to the cashier.
+6. Cashier/admin can confirm payment in Admin > Payments by changing Pending to Paid.
+
+Note: PHP syntax and archive integrity checks are performed, but this build has not been live-tested against the user's WAMP/MySQL environment.

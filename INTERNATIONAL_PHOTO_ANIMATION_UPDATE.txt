@@ -1,0 +1,11 @@
+TravelHub International Destination Photo + Animation Update
+
+- Added a local-photo-based, slow Ken Burns / pan animation to scenic hero backgrounds.
+- Updated public page banners with destination photography from Sri Lanka, Maldives, Santorini/Greece, Switzerland, and Ella train country scenes.
+- Updated login and registration background photo motion.
+- Updated customer dashboard, profile, bookings, reviews, booking, and payment page background imagery.
+- Added separate scenic backgrounds to admin overview, bookings, packages, destinations, tourists, payments, reviews, and messages pages.
+- All image paths point to assets/images inside this ZIP; these photo backgrounds do not require external image hosting.
+- Respects the user's operating-system reduced-motion preference.
+
+Note: The site uses the bundled destination photographs already in the project. Run it in WAMP and refresh the browser (Ctrl+F5) to view the updates.

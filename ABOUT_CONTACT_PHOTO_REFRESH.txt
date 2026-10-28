@@ -1,0 +1,7 @@
+TRAVELHUB ABOUT + CONTACT HERO PHOTO REFRESH
+
+- Replaced the About page hero with a new high-resolution Santorini-style Mediterranean travel photo.
+- Replaced the Contact page hero with a new high-resolution Maldives-style turquoise lagoon and resort photo.
+- Added both photos locally in assets/images so these hero backgrounds do not depend on remote image hosting.
+- Reduced the dark gradient overlay to improve photo clarity while retaining readable white heading text.
+- Existing PHP pages and database files were retained.

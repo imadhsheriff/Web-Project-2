@@ -1,0 +1,9 @@
+TravelHub Premium Logo Update
+
+- Added a high-resolution horizontal TravelHub wordmark logo with compass emblem and tagline.
+- Updated the shared navigation header so the complete wordmark remains on one line and does not split into “travel” and “hub” rows.
+- The shared header update applies to public pages and signed-in/admin pages using includes/header.php.
+- Logo asset: assets/images/travelhub-wordmark.png
+- Existing travelhub-logo.svg is retained as a backup/icon asset.
+
+Install: extract this ZIP into your local web server folder, replacing the previous project copy. Refresh the browser with Ctrl+F5.

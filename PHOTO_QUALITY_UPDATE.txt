@@ -1,0 +1,8 @@
+TRAVELHUB PHOTO QUALITY UPDATE
+
+- Replaced the low-resolution international destination images with larger, sharper local image assets for Bali, Maldives, Dubai, Singapore, Paris, Rome, Santorini and the Swiss Alps.
+- Kept the images inside assets/images so the site does not depend on external image hosts for these destination photos.
+- Updated Ella destination image mapping to use the larger Ella train hero photo.
+- Existing PHP pages, database files, forms and admin routes are preserved.
+
+To view the local photos, extract the ZIP into your WAMP www folder and open the project through localhost.

@@ -1,0 +1,7 @@
+TravelHub — High-Quality Animated Photo Update
+
+This update applies subtle CSS motion to locally bundled, high-resolution travel photos across the public site, sign-in/sign-up pages, customer account pages, and admin pages. It adds gentle hero-background drift, image-card hover zoom, consistent cover positioning, and reduced-motion accessibility support.
+
+Destination assets already bundled in assets/images include Sri Lanka (Ella train/Nine Arch Bridge, Sigiriya, Galle, Mirissa, Yala, Kandy, Colombo), Maldives, Switzerland, Greece/Santorini, Paris, Rome, Dubai, and Singapore. The website does not need an external image host for these bundled photos. Google Fonts still uses an internet connection for its optional font files.
+
+Validation: ZIP archive integrity checked; PHP syntax check should be run in the user's WAMP environment before deployment. Browser rendering was not run in this environment.

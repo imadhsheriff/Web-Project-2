@@ -1,0 +1,12 @@
+<?php
+require_once 'includes/config.php'; require_once 'includes/functions.php'; require_tourist();
+$page_title = 'My bookings';
+$s = $pdo->prepare("SELECT b.*, p.package_name, p.price, py.transaction_reference FROM bookings b JOIN tour_packages p ON b.package_id = p.package_id LEFT JOIN payments py ON py.booking_id=b.booking_id WHERE b.tourist_id = ? AND (py.payment_id IS NULL OR py.payment_id=(SELECT MAX(py2.payment_id) FROM payments py2 WHERE py2.booking_id=b.booking_id)) ORDER BY b.booking_id DESC");
+$s->execute([$_SESSION['tourist_id']]); $bookings = $s->fetchAll();
+require 'includes/header.php'; ?>
+<section class="section section-soft account-page-section"><div class="container account-layout"><div class="account-sidebar-card"><?php require 'includes/account_sidebar.php'; ?></div><section class="account-content-card account-bookings-content"><span class="eyebrow">Your travel plans</span><h1>My bookings</h1><p>Review your reservations, print cashier receipts and check whether payment has been confirmed.</p><div class="account-action-row"><a class="btn" href="packages.php">Find a new trip ↗</a></div>
+<?php if (!$bookings): ?><div class="empty-state"><h3>Your travel story starts here</h3><p>You have no bookings yet. Explore tour packages to plan your first trip.</p><a class="btn" href="packages.php">Explore packages</a></div><?php else: ?>
+<div class="table-wrap"><table><thead><tr><th>Package / reference</th><th>Travel date</th><th>Travellers</th><th>Total</th><th>Booking status</th><th>Payment status</th><th>Action</th></tr></thead><tbody>
+<?php foreach ($bookings as $b): ?><tr><td><?= e($b['package_name']) ?><br><small class="muted">#TH<?= (int)$b['booking_id'] ?></small></td><td><?= e($b['travel_date']) ?></td><td><?= (int)$b['number_of_persons'] ?></td><td><?= money($b['total_amount']) ?></td><td><span class="status <?= $b['booking_status'] === 'Pending' ? 'pending' : '' ?>"><?= e($b['booking_status']) ?></span></td><td><span class="status <?= $b['payment_status'] !== 'Paid' ? 'pending' : '' ?>"><?= e($b['payment_status']) ?></span><br><small>Cashier only</small></td><td><a class="text-link" href="booking_receipt.php?booking_id=<?= (int)$b['booking_id'] ?>">View / print receipt ↗</a></td></tr><?php endforeach; ?>
+</tbody></table></div><?php endif; ?><div class="cashier-instruction"><strong>Reminder</strong><p>Bookings are unpaid until the cashier records and confirms payment. The printable booking receipt is not a paid receipt.</p></div></section></div></section>
+<?php require 'includes/footer.php'; ?>

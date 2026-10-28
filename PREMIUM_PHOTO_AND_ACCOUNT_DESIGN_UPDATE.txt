@@ -1,0 +1,8 @@
+TravelHub Premium Photo and Account Design Update
+
+- Updated key travel scenery to bundled, high-resolution local images (no external image host required).
+- Unified dashboard, profile, bookings, reviews, booking and payment pages with matching premium white panels, teal navigation, consistent typography, responsive layout, cards and tables.
+- Removed large backdrop blur from account content panels so page photography remains crisp around the panels.
+- Preserved the existing PHP pages, database files, admin area, logo and the previously requested removal of the homepage “Handpicked journeys for you” section.
+
+Install: Extract the ZIP into your WAMP www folder. Open the project through localhost. Keep the assets folder with the PHP files.

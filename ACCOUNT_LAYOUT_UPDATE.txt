@@ -1,0 +1,10 @@
+TravelHub account layout update
+
+Changes:
+- Added a shared account sidebar component for Dashboard, My Profile, My Bookings, and Reviews.
+- Added a dedicated My Bookings page and updated sidebar navigation to open it.
+- Standardized each account page to a left navigation card and right content card.
+- Made account forms left-to-right in two columns on desktop and responsive on mobile.
+- Used bundled local travel photographs for the account page background.
+
+Installation: Extract the TravelHub_Website folder into WAMP www. Keep your database and includes/config.php settings as currently configured. Test using your existing local database.

@@ -1,0 +1,5 @@
+TravelHub Premium Navigation Refresh
+
+Updated the shared navigation used across the public and admin-facing site: taller translucent header, stronger logo sizing, refined typography and spacing, animated active/hover underline, premium teal gradient CTA, subtle shadow, and responsive mobile menu styling.
+
+The update is CSS-only and retains the existing PHP routes and database files.

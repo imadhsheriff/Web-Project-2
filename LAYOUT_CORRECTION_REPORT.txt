@@ -1,0 +1,9 @@
+TravelHub layout correction
+
+- Improved dashboard left-to-right layout and white panel contrast.
+- Improved profile, booking and payment forms with two-column desktop fields.
+- Improved reviews hero height, review form alignment and readability.
+- Uses included local photos for account-page backgrounds; no external image download required for these backgrounds.
+- Mobile layouts stack into one column.
+
+Please test using your existing WAMP/PHP and database configuration.

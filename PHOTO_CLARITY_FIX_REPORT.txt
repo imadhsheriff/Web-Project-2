@@ -1,0 +1,9 @@
+TRAVELHUB PHOTO CLARITY FIX
+
+- Replaced low-resolution train, beach, tropical resort, Santorini, alpine, and Sigiriya photos with bundled high-resolution locally stored images.
+- Updated public page hero banners to show clearer photography with a restrained dark overlay for readable white headings.
+- Removed external image dependencies from the homepage collage where local equivalents exist.
+- Added CSS safeguards against accidental blur filters on travel photos.
+- Images are bundled locally; the website photo display no longer depends on external image hosting for these assets.
+
+Note: This ZIP was checked for archive integrity and PHP syntax, but was not launched in the user's WAMP environment.

@@ -1,0 +1,31 @@
+TravelHub static repair report
+==============================
+Fixed:
+1. Separated administrator and tourist session IDs to prevent foreign-key failures caused by role ID collisions.
+2. Added tourist/admin session validation against the database.
+3. Updated profile page to handle missing profile rows safely and display escaped field values only.
+4. Booking, payment and review submission now require a valid tourist session.
+5. Logout now clears the session cookie and session data.
+6. Database connection errors no longer print raw SQL/PDO exception details to the browser.
+7. Review submission validates the optional package ID before insert.
+8. Admin package creation uses the authenticated administrator ID rather than assuming admin ID 1.
+
+Validation performed in this environment:
+- PHP syntax lint for all PHP files.
+- ZIP integrity test.
+- Static review of SQL table/foreign-key relationships and referenced local image files.
+
+Limitations:
+- This environment does not run the user's local WAMP/MySQL instance, so live browser/database workflows must be retested on the user's computer after import.
+
+9. Expanded the seed data to 12 destinations and 12 packages, including six international destinations.
+10. Added the TravelHub SVG logo, updated navigation spacing/responsive menu styling, and made destination/package grids four columns on desktop.
+11. Expanded the home page destination list and added a trip-planning enquiry form that pre-fills the contact form.
+12. Fixed the package search form so the search text is submitted correctly.
+13. Corrected shared header asset/navigation paths on admin pages. Added image fallbacks for remote international photos when internet is unavailable.
+
+
+14. Updated the home package-section heading to “Handpicked journeys for you”.
+15. Added distinct, soft international travel-photo backgrounds to page hero sections and major form panels, with translucent overlays to preserve text contrast.
+16. Refined navigation spacing, footer logo consistency, and administrator dashboard styling.
+17. Re-ran PHP syntax checks and ZIP integrity validation after the visual changes. Live WAMP/MySQL interaction tests remain necessary on the user's computer.

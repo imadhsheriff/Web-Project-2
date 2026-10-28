@@ -1,0 +1,12 @@
+TravelHub Signature Footer Update
+=================================
+- Replaced the previous shared footer with a premium responsive footer design.
+- Applied through includes/footer.php so it is shared by public pages, customer account/dashboard pages, and admin pages that use the common layout.
+- Uses the bundled premium-beach-hero.jpg image as a locally stored footer background with a dark teal/navy overlay for readable text.
+- Added consistent navigation links, account/admin links when relevant, contact links, responsive layout, highlight badges, and a new bottom bar.
+- Fixed footer asset/script/link paths for pages inside the admin directory.
+- PHP syntax checks passed for all PHP files.
+
+Notes:
+- This is an academic project demonstration. Contact details in the footer are the project's existing sample details.
+- Load the project through WAMP/Apache and ensure the existing TravelHub database is imported/configured as before.
